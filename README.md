@@ -102,6 +102,8 @@ Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md
 
 Usage: [reth-bsc snapshot usage](./usage/reth-bsc-snapshot.md)
 
+We currently recommend using snapshots in `triedb` mode, as all performance optimizations in reth-bsc are based on this node configuration.
+
 ### Snapshots (Monthly Update)
 
 | Type | Network | File | Size | Special Parameters |
