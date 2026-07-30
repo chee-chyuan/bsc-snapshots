@@ -104,19 +104,15 @@ Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md
 Usage: [reth-bsc snapshot usage](./usage/reth-bsc-snapshot.md)
 
 ### Snapshots (Monthly Update)
-** Support for TrieDB will be discontinued. To use the v2 snapshots, do upgrade to Reth-bsc v0.0.10-beta or above. <br>
-** v2 snapshots for archive MDBX will be available soon
+** Archive MDBX currently has block height at around 20260403. An updated snapshot will be released once we have the synced version <br>
+** Archive rocksDb is small as `TransactionHashNumbers`, `AccountsHistory`, `StoragesHistory` are currently empty. They will be rebuilt during stage sync
 
 | Type | Network | File | Size | Special Parameters |
 | ---- | ------- | ---- | ---- | ------------------ |
-| Archive MDBX | BSC-MainNet | [20260402_mainnet_reth_mdbx_static_files_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260302_mainnet_reth_mdbx_static_files_archive_node.tar.zst) <br> [20260402_mainnet_reth_mdbx_db_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260402_mainnet_reth_mdbx_db_archive_node.tar.zst) | 2.88 TiB <br> 3.45 TiB | `--db.max-size=12TB` <br> `--db.page-size=8KB` |
+| Archive MDBX | BSC-MainNet | [20260729_mainnet_reth_mdbx_static_files_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260729_mainnet_reth_mdbx_static_files_archive_node_v2.tar.zst) <br> [20260729_mainnet_reth_mdbx_db_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260729_mainnet_reth_mdbx_db_archive_node_v2.tar.zst) <br> [20260729_mainnet_reth_mdbx_rocksdb_archive_node_v2](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260729_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst) | 4.53 TiB <br> 269 GB <br> 97kB**| `--db.max-size=12TB` <br> `--db.page-size=8KB` |
 | Archive MDBX | BSC-TestNet | [20260710_testnet_reth_mdbx_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260710_testnet_reth_mdbx_archive_node_v2.tar.zst) | 404.90 GiB | - |
 | Full MDBX | BSC-TestNet | [20260625_testnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260625_testnet_reth_mdbx_full_node_v2.tar.zst) | 258.82 GiB | - |
 | Full MDBX | BSC-MainNet | [20260626_mainnet_reth_mdbx_full_node_v2.tar.zst ](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260626_mainnet_reth_mdbx_full_node_v2.tar.zst) | 2.97 TiB | - |
-| Full TrieDB | BSC-TestNet | [20260422_testnet_reth_triedb_full_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_testnet_reth_triedb_full_node.tar.zst) | 358.76 GiB | - |
-| Full TrieDB | BSC-MainNet | [20260422_mainnet_reth_triedb_full_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_mainnet_reth_triedb_full_node.tar.zst) | 3.72 TiB | - |
-| Archive TrieDB | BSC-TestNet | [20260422_testnet_reth_triedb_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_testnet_reth_triedb_archive_node.tar.zst) | 522.31 GiB | - |
-| Archive TrieDB | BSC-MainNet | [20260422_mainnet_reth_triedb_static_files_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_mainnet_reth_triedb_static_files_archive_node.tar.zst) <br> [20260422_mainnet_reth_triedb_db_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_mainnet_reth_triedb_db_archive_node.tar.zst) <br> [20260422_mainnet_reth_triedb_triedb_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_mainnet_reth_triedb_triedb_archive_node.tar.zst) | 2.94 TiB <br> 3.54 TiB <br> 647.84 GiB | `--db.max-size=12TB` <br> `--db.page-size=8KB` |
 
 ## FAQ
 
